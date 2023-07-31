@@ -72,7 +72,7 @@ export const extractLiveQueryRootFieldCoordinates = (params: {
             for (const arg of fieldDef.args) {
               if (arg.name === "id") {
                 const fieldSDLType = arg.type.toString();
-                if (fieldSDLType === "ID!" || fieldSDLType === "ID") {
+                if (fieldSDLType === "GadgetID!" || fieldSDLType === "GadgetID") {
                   const values = getArgumentValues(
                     fieldDef,
                     fieldNode,

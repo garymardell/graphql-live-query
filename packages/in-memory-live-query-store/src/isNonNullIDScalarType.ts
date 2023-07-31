@@ -9,7 +9,7 @@ export const isNonNullIDScalarType = (
   type: GraphQLOutputType
 ): type is GraphQLScalarType => {
   if (isNonNullType(type)) {
-    return isScalarType(type.ofType) && type.ofType.name === "ID";
+    return isScalarType(type.ofType) && type.ofType.name === "GadgetID";
   }
   return false;
 };
