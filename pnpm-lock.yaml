@@ -1,0 +1,46 @@
+lockfileVersion: '6.0'
+
+settings:
+  autoInstallPeers: true
+  excludeLinksFromLockfile: false
+
+dependencies:
+  '@graphql-tools/utils':
+    specifier: ^8.5.2
+    version: 8.5.2(graphql@16.0.0-experimental-stream-defer.5)
+  '@n1ru4l/graphql-live-query':
+    specifier: 0.10.0
+    version: link:../graphql-live-query/dist
+  '@repeaterjs/repeater':
+    specifier: ^3.0.4
+    version: 3.0.4
+
+devDependencies:
+  graphql:
+    specifier: 16.0.0-experimental-stream-defer.5
+    version: 16.0.0-experimental-stream-defer.5
+
+packages:
+
+  /@graphql-tools/utils@8.5.2(graphql@16.0.0-experimental-stream-defer.5):
+    resolution: {integrity: sha512-wxA51td/759nQziPYh+HxE0WbURRufrp1lwfOYMgfK4e8Aa6gCa1P1p6ERogUIm423NrIfOVau19Q/BBpHdolw==}
+    peerDependencies:
+      graphql: ^14.0.0 || ^15.0.0 || ^16.0.0
+    dependencies:
+      graphql: 16.0.0-experimental-stream-defer.5
+      tslib: 2.3.1
+    dev: false
+
+  /@repeaterjs/repeater@3.0.4:
+    resolution: {integrity: sha512-AW8PKd6iX3vAZ0vA43nOUOnbq/X5ihgU+mSXXqunMkeQADGiqw/PY0JNeYtD5sr0PAy51YPgAPbDoeapv9r8WA==}
+    dev: false
+
+  /graphql@16.0.0-experimental-stream-defer.5:
+    resolution: {integrity: sha512-bluMjYpxh3a1lwZuNP+FAaEDMWzccVhkv+STcw0ckB2EPtLRTYUdXQhF9YBbUHd3tZSAR7LXzsxIw2GZXhg5rw==}
+    engines: {node: ^12.22.0 || ^14.16.0 || >=16.0.0}
+
+  /tslib@2.3.1:
+    resolution: {integrity: sha512-77EbyPPpMz+FRFRuAFlWMtmgUWGe9UOG2Z25NqCwiIjRhOf5iKGuzSe5P2w1laq+FkRy4p+PCuVkJSGkzTEKVw==}
+    dev: false
+
+publishDirectory: dist
