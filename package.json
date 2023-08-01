@@ -1,0 +1,67 @@
+{
+  "name": "@n1ru4l/in-memory-live-query-store",
+  "version": "0.10.0",
+  "author": "n1ru4l <laurinquast@googlemail.com>",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/n1ru4l/graphql-live-queries.git",
+    "directory": "packages/in-memory-live-query-store"
+  },
+  "bugs": {
+    "url": "https://github.com/n1ru4l/graphql-live-queries/issues"
+  },
+  "homepage": "https://github.com/n1ru4l/graphql-live-queries#readme",
+  "keywords": [
+    "graphql",
+    "query",
+    "live",
+    "real-time"
+  ],
+  "devDependencies": {
+    "graphql": "16.0.0-experimental-stream-defer.5"
+  },
+  "dependencies": {
+    "@graphql-tools/utils": "^8.5.2",
+    "@n1ru4l/graphql-live-query": "0.10.0",
+    "@repeaterjs/repeater": "^3.0.4"
+  },
+  "peerDependencies": {
+    "graphql": "^15.4.0 || ^16.0.0"
+  },
+  "main": "dist/cjs/index.js",
+  "module": "dist/esm/index.js",
+  "exports": {
+    ".": {
+      "require": {
+        "types": "./dist/typings/index.d.ts",
+        "default": "./dist/cjs/index.js"
+      },
+      "import": {
+        "types": "./dist/typings/index.d.ts",
+        "default": "./dist/esm/index.js"
+      },
+      "default": {
+        "types": "./dist/typings/index.d.ts",
+        "default": "./dist/esm/index.js"
+      }
+    },
+    "./package.json": "./package.json"
+  },
+  "typings": "dist/typings/index.d.ts",
+  "typescript": {
+    "definition": "dist/typings/index.d.ts"
+  },
+  "scripts": {
+    "test": "jest",
+    "prerelease": "gitpkg publish"
+  },
+  "buildOptions": {
+    "input": "./src/index.ts"
+  },
+  "publishConfig": {
+    "directory": "dist",
+    "access": "public"
+  },
+  "type": "module"
+}
